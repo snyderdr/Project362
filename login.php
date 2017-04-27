@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html>
 
 <head>
 	<meta charset="utf-8">
@@ -21,7 +21,7 @@
 		
 		<input type="submit" value="log in">
 		<p>&nbsp;	  </p>
-		<input type="button" value="Register New Employee" <a href="register.html" />
+		<input type="button" value="Register New Employee" onclick="location.href='register.php';" />
 	</form>
 
 </div>

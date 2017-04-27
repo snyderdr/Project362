@@ -10,17 +10,11 @@
 </head>
 
 <body>
-<?php
-echo("it worked");
-
-?>
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/login-form.js"></script>
 <div class="register-form">
 	<h1>Register New Employee</h1>
-	<form action="#">
+	<form action="registercomplete.php">
 	
 	
 		<input type="text" name="Fname" placeholder="First Name">
@@ -47,6 +41,6 @@ echo("it worked");
 <div class="footer"></div>
 
 
-</body>
 
-</html>
+
+
