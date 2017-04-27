@@ -30,16 +30,16 @@
    
 	<input type="text" name="Engine" id="Engine" placeholder="ENGINE">
 	<input type="text" name="VIN" id="VIN" placeholder="VIN">
-	<input type="text" name="Milage" id="Milage" placeholder="MILAGE"> <br />
+	<input type="int" name="Milage" id="Milage" placeholder="MILAGE"> <br />
 	
 	<h3>PARTS</h3>
-    <input type="text" name="quantityOfPart" id="partQuantity" placeholder="QUANTITY">
-	<input type="text" name="Part" id="partType" placeholder="PART">
-    <input type="text" name="Price" id="price" placeholder="PRICE"><br />
+    <input type="int" name="partQuantity" id="partQuantity" placeholder="QUANTITY">
+	<input type="text" name="Part" id="Part" placeholder="PART">
+    <input type="number" step="any" name="Price" id="price" placeholder="PRICE"><br />
 	
 	<h3>LABOR</h3>
-    <input type="text" name="LaborHours" id="LaborHours" placeholder="LABOR HOURS">
-    <input type="text" name="LaborCost" id="LaborCost" placeholder="LABOR COST"><br /><br />
+    <input type="number" step="any" name="LaborHours" id="LaborHours" placeholder="LABOR HOURS">
+    <input type="number" step="any" name="LaborCost" id="LaborCost" placeholder="LABOR COST"><br /><br />
 	
 	<h3>DESCRIPTION</h3>
 	<input type="text" name="Desc" id="Desc" placeholder="RECOMENDATIONS"><br />

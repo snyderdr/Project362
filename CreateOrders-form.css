@@ -87,6 +87,7 @@ body {
 .CreateOrders-form input[type=text],
 .CreateOrders-form input[type=password],
 .CreateOrders-form input[type=email],
+.CreateOrders-form input[type=number],
 .CreateOrders-form input[type=submit],
 .CreateOrders-form input[type=date],
 .CreateOrders-form input[type=int],
@@ -252,6 +253,7 @@ body {
 /* Form User&Pass Input Styles */
 .CreateOrders-form input[type=text],
 .CreateOrders-form input[type=email],
+.CreateOrders-form input[type=number],
 .CreateOrders-form input[type=date],
 .CreateOrders-form input[type=int],
 .CreateOrders-form input[type=password],
@@ -274,6 +276,7 @@ body {
 
 .CreateOrders-form input[type=text]:hover,
 .CreateOrders-form input[type=email]:hover,
+.CreateOrders-form input[type=number]:hover,
 .CreateOrders-form input[type=date]:hover,
 .CreateOrders-form input[type=int]:hover,
 .CreateOrders-form input[type=password]:hover {
@@ -284,6 +287,7 @@ body {
 
 .CreateOrders-form input[type=text]:focus,
 .CreateOrders-form input[type=email]:focus,
+.CreateOrders-form input[type=number]:focus,
 .CreateOrders-form input[type=date]:focus,
 .CreateOrders-form input[type=int]:focus,
 .CreateOrders-form input[type=password]:focus {
