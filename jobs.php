@@ -36,6 +36,7 @@ else
 
 
 <h3> Form submitted</h3>
+<p>course grade: <b>
 
 <?php
 
@@ -52,7 +53,7 @@ $designation = $_POST['employeeDes'];
 ?>
 
 <?php
-}
+
 $servername="localhost";
 $username="root";
 $password="toor";
@@ -64,11 +65,15 @@ if ($conn->connect_error){
         die("Connection failed: " . $conn->connect_error);
 }
 
-$sql="INSERT INTO `Jobs`(CustomerFname, CustomerLname)  VALUES ($customerFname, $customerLname)";
+$sql="INSERT INTO `Jobs`(CustomerFname, CustomerLname, VIN, Engine, Make, Model, Year, Description, EmployeeDesignation) VALUES ('$customerFname', '$customerLname', '$VIN', '$Engine', '$make', '$model', $year, '$Desc', '$designation')";
 $conn->query($sql);
-
 $conn->close();
+}
+?> </b>
 
-?>
-</body></html>
+</p>
+
+</body>
+
+</html>
 

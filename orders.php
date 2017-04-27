@@ -34,20 +34,16 @@
         if (!isset($_POST['submit'])) 
         {
         //form
-        ?>
-
-<?php
+        
 }
 
 else
 {
 ?>
 
-
 <h3> Form submitted</h3>
 
 <?php
-
 $customerFname =  $_POST['customerFname'];
 $customerLname =  $_POST['customerLname'];
 $VIN =  $_POST['VIN'];
@@ -66,7 +62,6 @@ $laborHours =  $_POST['laborHours'];
 $laborCost =  $_POST['laborCost'];
 $date =  $_POST['date'];
 $Desc =  $_POST['Desc'];
-
 }
 ?>
 
@@ -82,11 +77,12 @@ if ($conn->connect_error){
         die("Connection failed: " . $conn->connect_error);
 }
 
-$sql="INSERT INTO `Orders` (CustomerFname, CustomerLname, VIN, Milage, Engine, Make, Model, Year, Color, EmployeeFname, EmployeeLname, quatityOfPart, Part, Price, LaborHours, LaborCost, Date, Concerns)  VALUES ($customerFname, $customerLname, $VIN, $milage, $Engine, $make, $model, $year, $color, $employeeFname, $employeeLname, $partQuantity, $partType, $price, $laborHours, $laborCost, $date, $Desc)";
+$sql="INSERT INTO `Orders` (CustomerFname, CustomerLname, VIN, Milage, Engine, Make, Model, Year, Color, EmployeeFname, EmployeeLname, quantityOfPart, Part, Price, LaborHours, LaborCost, Date, Description)  VALUES ('$customerFname', '$customerLname', '$VIN', $milage, '$Engine', '$make', '$model', $year, '$color', '$employeeFname', '$employeeLname', $partQuantity, '$partType', $price, $laborHours, $laborCost, $date, '$Desc')";
 $conn->query($sql);
 
 $conn->close();
 
 ?>
-</body></html>
+</body>
+</html>
 
