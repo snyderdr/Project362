@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Login</title>
@@ -11,7 +11,7 @@
 <body>
 <div class="login-form">
 	<h1>Login Form</h1>
-	<form action="#">
+	<form action="index.php" method="POST">
 		<input type="text" name="username" placeholder="username">
 		<input type="password" name="password" placeholder="password">
 		<span>
@@ -26,11 +26,12 @@
 
 </div>
 
-<div class="footer"></div>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="js/login-form.js"></script>
 
-</body>
 
-</html>
+
+
+

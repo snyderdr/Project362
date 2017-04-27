@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html lang="en"> 
+ 
 <head>
 	<meta charset="utf-8">
 	<title>Create Orders</title>
@@ -56,6 +55,5 @@
 
 <div class="footer"></div>
 
-</body>
-</html>
+
 

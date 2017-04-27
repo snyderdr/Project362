@@ -1,10 +1,11 @@
-<html><body>
+<html>
 
  
 
 
 <?php
 
+	
 
         if (!isset($_POST['submit'])) 
         {
@@ -43,7 +44,6 @@ $Desc =  $_POST['Desc'];
 
 echo($customerFname);
 echo($customerLname);
-
 }
 ?>
 
