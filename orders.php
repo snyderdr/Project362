@@ -9,7 +9,7 @@
         if (!isset($_POST['submit'])) 
         {
         //form
-        
+        require ("ordersform.php");
 }
 
 else
@@ -20,10 +20,10 @@ else
 <h3> Form submitted</h3>
 
 <?php
-require ("ordersform.php");
 
-$customerFname =  $_POST['customerFname'];
-$customerLname =  $_POST['customerLname'];
+
+$customerFname =  $_POST['CustomerFname'];
+$customerLname =  $_POST['CustomerLname'];
 $VIN =  $_POST['VIN'];
 $milage =  $_POST['milage'];
 $Engine =  $_POST['Engine'];
@@ -40,6 +40,10 @@ $laborHours =  $_POST['laborHours'];
 $laborCost =  $_POST['laborCost'];
 $date =  $_POST['date'];
 $Desc =  $_POST['Desc'];
+
+echo($customerFname);
+echo($customerLname);
+
 }
 ?>
 
