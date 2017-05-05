@@ -1,0 +1,513 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+html, body
+{
+    height:100%;
+    width:100%;
+    background-color:#006648;
+    color:#000000;
+    font-weight:normal;
+    font-family:"Segoe UI" , "Segoe" , "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif;
+    min-width:500px;
+    -ms-overflow-style:-ms-autohiding-scrollbar;
+}
+
+body
+{
+    font-size:0.9em;
+}
+
+#noScript { margin:16px; color:Black; }
+
+:lang(en-GB){quotes:'\2018' '\2019' '\201C' '\201D';}
+:lang(zh){font-family:微软雅黑;}
+
+@-ms-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@-webkit-viewport { width: device-width;  }
+@viewport { width: device-width; }
+
+/* Theme layout styles */
+
+#fullPage
+{
+    max-width:100%;
+    height:100%;
+    background-color:inherit;
+}
+#brandingWrapper
+{
+    width:100%;
+    height:10%;
+    background-color:#4488dd;
+    display:none;
+}
+#branding
+{       
+    /* A background image will be added to the #branding element at run-time once the illustration image is configured in the theme. 
+       Recommended image dimensions: 1420x1200 pixels, JPG or PNG, 200 kB average, 500 kB maximum. */
+    height:100%;
+    margin-right:500px; margin-left:0px;
+    background-color:inherit;
+    background-repeat: no-repeat;
+    background-size:cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+}
+#contentWrapper
+{
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+/*    overflow:auto; */
+    margin-left:0px; margin-right:0px; 
+    background-color:#006648;
+}
+#contentWrapper2
+{
+    position:relative;
+
+    /*width:100%;*/
+
+    height:100%;
+/*    overflow:auto; */
+    margin-left:20px; margin-right:20px; 
+    background-color:#006648;
+}
+#content
+{
+/*    min-height:50%; */
+/*    height: auto !important; */
+    height: auto; !important;
+    max-width: 500px;
+    background-color:#006648;
+    margin:0 auto;
+}
+#workArea
+{
+/*    min-height:50%; */
+/*    height: auto !important; */
+    height: 355px;
+    background-color:#FFFFFF;
+    border-radius:10px;
+    padding: 30px 20px 30px 20px;
+    text-align:center;
+	//width:90%;
+	margin-bottom:30px;
+}
+#workArea2
+{
+/*    min-height:50%; */
+/*    height: auto !important; */
+    height: 355px;
+    width: 1560px;
+    background-color:#FFFFFF;
+    border-radius:10px;
+    /*padding: 30px 20px 30px 20px;*/
+    text-align:center;
+	/*width:90%;*/
+	margin-bottom:30px;
+	margin-left: 0px;
+}
+#workArea3
+{
+/*    min-height:50%; */
+/*    height: auto !important; */
+    height: 355px;
+    width: 1560px;
+    background-color:#FFFFFF;
+    border-radius:10px;
+    /*padding: 30px 20px 30px 20px;*/
+    /*text-align:center;*/
+	/*width:90%;*/
+	margin-bottom:30px;
+	margin-left: 0px;
+}
+#logo
+{
+    margin-left: 640px;
+    margin-right: 640px;
+}
+#loggedinas
+{
+    color: white;
+    margin-left: 20px;
+}
+#header
+{
+    font-size:2em;
+    font-weight:normal;
+    font-family:"Segoe UI Light" , "Segoe" , "SegoeUI-Light-final", Tahoma, Helvetica, Arial, sans-serif;
+/*    display:none; */
+    color:#FFFFFF;
+    width:100%;
+    text-align:center;
+    //padding: 0 15px 0 15px;
+}
+#header img
+{
+    /* Logo image recommended dimension: 60x60 (square) or 350X35 (elongated), 4 kB average, 10 kB maximum. Transparent PNG strongly recommended. */
+    width:auto;
+    height:auto;
+	padding: 30px 15px 30px 15px;
+}
+#footerPlaceholder
+{
+    height:auto;
+    text-align:center;
+    font-weight:bold;
+    font-size:18pt;
+    font-color:#FFFFFF;
+    color:#FFFFFF;
+    width:550px;
+}
+#footer
+{
+    height:auto;
+    position:relative;
+    color:#FFFFFF;
+    font-size:14px;
+}
+#footerLinks
+{
+    float:none;
+    padding-top:5px;
+    text-align:center;
+    color:#FFFFFF;
+    //padding-left:32px;
+}
+#loginhelp {
+    //padding: 0 12% % 12%;
+    text-align: center;
+}
+.loginhelp {
+	//padding: 12px 0 12px 0;
+}
+#loginMessage {
+	color:#006648;
+	font-size:24px;
+}
+#helplinks {
+	list-style:none;
+	margin: 0 0 15px 0;
+}
+h2.loginhelp {
+    font-size:1.5em;
+    font-weight:bold;
+    text-align:center;
+    color:#006648;
+}
+p.loginhelp {
+    text-align:left;
+    margin-left:16%;
+    color:#0033FF;
+}
+#copyright {display:none}
+.pageLink { color:#FFFFFF; //padding-left:16px; font-weight:normal; font-size:1em;}
+
+/* Common content styles */
+
+.clear {clear:both;}
+.float { float:left; } 
+.floatReverse { float:right; } 
+.indent { margin-left:16px; } 
+.indentNonCollapsible { padding-left:16px; }
+.hidden {display:none;}
+.notHidden {display:inherit;}
+.error { color:#c85305; }
+.actionLink { margin-bottom:8px; display:block; }
+a
+{
+    color:#2672ec;
+    text-decoration:none;
+    background-color:transparent;
+}
+li > a {
+	color:#006648;
+	text-decoration:underline;
+	padding: 2px 0 2px 0;
+	font-size: 1em;
+}
+li > a:hover {
+	color:#003C2D;
+}
+ul { list-style-type: disc; }
+h1,h2,h3,h4,h5,label { margin-bottom: 8px; }
+.submitMargin { margin-top:15px; margin-bottom:15px; }
+.topFieldMargin { margin-top:8px; }
+.fieldMargin { margin-bottom:8px; }
+.groupMargin { margin-bottom:15px; } 
+.sectionMargin { margin-bottom:32px; }
+.block { display: block; }
+.autoWidth { width:auto; }
+.fullWidth { width:342px; }
+.fullWidthIndent { width:326px; }
+input
+{
+    max-width:100%; 
+    font-family:inherit;
+    margin-bottom:8px;
+}
+input[type="radio"], input[type="checkbox"] {
+    vertical-align:middle;
+    margin-bottom: 0px;
+}
+span.submit, input[type="submit"]
+{
+/*    border:none;
+    border-style:solid;
+    border-width:1px;
+*/
+    background-color:#006648;
+    min-width:80px;
+	min-height:40px;
+    width:400px;
+    height:30px;
+    padding:6px 30% 6px 30%;
+    transition:background 0s;
+    color:#FFFFFF;
+    cursor:pointer;
+    //margin-bottom:8px;
+    border-radius:6px;
+	font-size:1.5em;
+    
+    -ms-user-select:none;
+    -moz-transition:background 0s;
+    -webkit-transition:background 0s;
+    -o-transition:background 0s;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select:none;
+}
+input[type="submit"]:hover,span.submit:hover
+{
+	background-color:#003C2D;
+}
+input.text{
+    height:28px;
+    padding:0px 3px 0px 3px ;
+    border:solid 1px #BABABA;
+}
+input.text:focus
+{
+  border: 1px solid #6B6B6B;
+}
+select
+{
+    height:28px;
+    min-width:60px;
+    max-width:100%; 
+    margin-bottom:8px;
+    white-space:nowrap;
+    overflow:hidden;
+    box-shadow:none;
+    padding:2px;
+    font-family:inherit;
+}
+h1, .giantText
+{
+   font-size:2.0em; 
+   font-weight:lighter;
+}          
+h2, .bigText
+{
+   font-size:1.33em;
+   font-weight:lighter;
+}
+h3, .normalText
+{
+    font-size:1.0em;
+    font-weight:normal;
+}
+h4, .smallText
+{
+    font-size:0.9em;
+    font-weight:normal;
+}
+h5, .tinyText
+{
+    font-size:0.8em;
+    font-weight:normal;
+}
+.hint
+{
+    color:#999999;
+}
+.emphasis
+{
+    font-weight:700;
+    color:#2F2F2F;
+} 
+.smallIcon
+{
+    height:20px;
+    padding-right:12px;
+    vertical-align:middle;
+}
+.largeIcon
+{
+    height:48px;
+    /* width:48px; */
+    vertical-align:middle;
+}
+.largeTextNoWrap
+{
+    height:48px;
+    display:table-cell; /* needed when in float*/
+    vertical-align:middle;
+    white-space:nowrap;
+    font-size:1.2em;
+}
+.idp
+{
+    height:48px;
+    clear:both;
+    padding:8px;
+    overflow:hidden;
+}
+.idp:hover 
+{
+    background-color:#cccccc;
+}
+.idpDescription
+{
+    width:80%;
+}
+
+#idp_SignInThisSiteStatusLabel {
+	font-size: 1.5em;
+	color: #006648;
+}
+
+#idp_RelyingPartyDropDownList {
+	margin: 8px 0 8px 0;
+	height:34px;
+	display:inline;
+}
+
+#idp_GoButton, #idp_SignInButton, #idp_SignOutButton  {
+	height: 40px;
+	font-size:1em;
+}
+
+/* Form factor: intermediate height layout. Reduce space of the header. */
+@media only screen and (max-height: 820px) {
+    #header {
+        //padding-top: 15px;
+        min-height:0px;
+        overflow: hidden;
+    }
+
+    #workArea { 
+		//margin-bottom:15px; 
+    }
+}
+
+/* Form factor: intermediate height layout. Reduce space of the header. */
+@media only screen and (max-height: 500px) {
+    #header {
+        //padding-top: 15px;
+        //margin-bottom: 15px;
+    }
+    #workArea{
+        //margin-bottom:15px; 
+    }
+}
+
+/* Form factor: intermediate layout (WAB in non-snapped view falls in here) */
+@media only screen and (max-width: 600px) {
+    html, body {
+        min-width: 260px;
+    }
+
+    #brandingWrapper {
+        display: none;
+    }
+
+    #contentWrapper {
+        float: none;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    #content, #footer, #header {
+        width: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #workArea {
+		width: 90%;
+    }
+
+    .fullWidth {
+        width: 392px;
+    }
+
+    .fullWidthIndent {
+        width: 376px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        font-size: 0.8em;
+    }
+	
+    #content, #footer {
+        width:auto;
+		padding-left:15px;
+		padding-right:15px;
+    }
+
+    #header {
+        width: auto;
+    }
+	
+	#workArea {
+		width: inherit;
+    }
+
+    span.submit, input[type="submit"] {
+        font-size: 1.5em;
+    }
+
+    .fullWidth {
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .fullWidthIndent {
+        width: 85%;
+    }
+
+    .idpDescription {
+        width:70%;
+    }
+}
+
+/* Form factor: snapped WAB (for WAB to work in snapped view, the content wrapper width has to be set to 260px) */
+@media only screen and (max-width:280px) {
+    #contentWrapper {
+        width:260px;
+    }
+	#workArea {
+		width: inherit;
+    }
+    .idpDescription {
+        max-width:160px;
+        min-width:100px;
+    }
+}

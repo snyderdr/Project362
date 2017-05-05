@@ -6,7 +6,7 @@ define ('MYSQL', BASE_URI . 'mysql.inc.php');
 
 
 //start the session
-session_start();
+//session_start();
 
 
 // helper function
